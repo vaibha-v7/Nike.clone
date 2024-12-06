@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&family=Didact+Gothic&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
+
+        * {
+            margin: 0;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgba(0, 0, 0, 0.212);
+            border-radius: 3px;
+            position: sticky;
+
+        }
+
+        .li {
+            font-family: "Didact Gothic", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: larger;
+            margin: 30px;
+
+            position: relative;
+            left: 498px;
+            cursor: pointer;
+            
+        }
+
+        .search {
+            display: flex;
+            position: relative;
+            left: 643px;
+            top: -5px;
+            border: 2px solid rgba(0, 0, 0, 0.226);
+            border-radius: 40px;
+            padding: 3px 100px 5px 40px;
+            color: rgba(0, 0, 0, 0.308);
+            background-color: rgba(0, 0, 0, 0.062);
+        }
+
+        .searchbutton {
+            height: 20px;
+            position: relative;
+            top: 4px;
+            right: 20px;
+            opacity: 0.5;
+
+        }
+
+        .like {
+            display: flex;
+            height: 30px;
+            position: relative;
+            top: 28px;
+            left: 683px;
+            cursor: pointer;
+
+
+
+        }
+
+        .shop {
+            display: flex;
+            height: 34px;
+            position: relative;
+            top: 23px;
+            left: 710px;
+            cursor: pointer;
+
+
+        }
+
+        .logo {
+            display: flex;
+            height: 37px;
+            position: relative;
+            top: 27px;
+            left: 36px;
+
+
+
+        }
+
+        .bar {
+            
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.041);
+            height: 67px;
+            box-shadow: 2px 2px 2px #00000036;
+        }
+
+        .h2 {
+            padding: 5px 0px 0px 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h3 {
+            padding: 5px 0px 0px 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .shoe {
+            display: block;
+            position: relative;
+            top: 20px;
+            left: 30px;
+
+            width: 200px;
+            border: none;
+            height: 565px;
+            font-family: "Didact Gothic", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            overflow-y: scroll;
+
+        }
+
+        .gift {
+            padding: 30px 0px 30px 0px;
+        }
+
+        .categori {
+            padding: 10px 0px 10px 10px;
+            font: bold;
+            font-size: x-large;
+
+        }
+
+        .box {
+            position: relative;
+
+
+            background-color: rgba(0, 0, 0, 0.103);
+            height: 35vw;
+            width: 25vw;
+
+
+
+        }
+
+        #box1 {
+            top: -27vw;
+            left: 17vw;
+        }
+
+        #box2 {
+            top: -62vw;
+            left: 44vw;
+        }
+
+        #box3 {
+            top: -97vw;
+            left: 71vw;
+        }
+
+        #box21 {
+            top: -93vw;
+            left: 17vw;
+
+        }
+
+        #box22 {
+            top: -128vw;
+            left: 44vw;
+        }
+
+        #box23 {
+            top: -163vw;
+            left: 71vw;
+
+        }
+
+        #box31 {
+            top: -159vw;
+            left: 17vw;
+
+        }
+
+        #box32 {
+            top: -194vw;
+            left: 44vw;
+        }
+
+        #box33 {
+            top: -229vw;
+            left: 71vw;
+
+        }
+
+        .photo {
+            width: 25vw;
+        }
+
+        .text {
+            padding-left: 10px;
+            padding-top: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header style="position: sticky; top: 0px; z-index: 1;">
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                        <img class="logo"
+                            src="https://www.transparentpng.com/thumb/nike-logo/ZFwcg2-nike-logo-cut-out.png" alt="">
+                    </div>
+                </li>
+                <li class="li">New & Features</li>
+                <a href="https://www.nike.com/in/men"><li class="li">Men</li></a>
+                <a href="https://www.nike.com/in/women"><li class="li">Women</li></a>
+                <a href="https://www.nike.com/in/kids"><li class="li">Kids</li></a>
+                <a href="https://www.nike.com/in/w/sale-3yaep"><li class="li">Sale</li></a>
+                <li class="li search">
+                    <div><img class="searchbutton"
+                            src="data:image/png;base64,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"
+                            alt=""></div>Search
+                </li>
+                <li>
+                    <div>
+                        <img class="like"
+                            src="https://cdn.icon-icons.com/icons2/1347/PNG/512/likesocialheartbuttonoutline_87752.png"
+                            alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img class="shop"
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/shopping-bag-checkmark-icon.png"
+                            alt="">
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="bar">
+        <h2 class="h2">NEW STYLE SALE UP TO 40%</h2>
+        <h3 class="h3">MOVE SHOP CUSTOMIZE & CELEBRATE WITH US</h3>
+    </div>
+
+    <div>
+        <ul class="shoe">
+            <li class="gift">
+                <h1>Gifting</h1>
+            </li>
+            <li class="categori">Shoes</li>
+            <li class="categori">Tops & Tshirt</li>
+            <li class="categori">Jackets</li>
+            <li class="categori">Sports</li>
+            <li class="categori">Tracksuits</li>
+            <li class="categori">Tights</li>
+            <li class="categori">Socks</li>
+            <li class="categori">Skirts</li>
+            <li class="categori">Accessories</li>
+            <li class="categori">Equipments</li>
+            <li class="categori">Dresses</li>
+        </ul>
+    </div>
+
+    <div id="box1" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c11c5ca7-261c-440b-9ba4-68ede02a0f35/AIR+JORDAN+1+HIGH+G.png"
+            alt="">
+
+        <h3 class="text">Air Jordan | High G</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Men's Golf Shoes</h3>
+
+        <h3 class="text">MRP: 200$</h3>
+
+    </div>
+
+    <div id="box2" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8668c55d-4c52-441f-bf8c-e869a416a5db/AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 Zoom CMFT 2</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Men's Shoes</h3>
+
+        <h3 class="text">MRP: 150$</h3>
+
+    </div>
+
+    <div id="box3" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4d6e54aa-7104-47c6-8777-3d838d6980b3/AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 Zoom CMFT 3</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Men's Shoes</h3>
+
+        <h3 class="text">MRP: 150$</h3>
+
+    </div>
+
+
+    <div id="box21" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c1e88e75-c863-4043-ac61-f64adece0fea/AIR+JORDAN+9+G.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 9 G</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Golf Shoes</h3>
+
+        <h3 class="text">MRP: 250$</h3>
+
+    </div>
+
+    <div id="box22" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5b9a5321-c1e8-4af8-9c92-8a2ee4269c68/WMNS+AIR+JORDAN+1+MM+HIGH.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 High Method To Make</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Women's Shoes</h3>
+
+        <h3 class="text">MRP: 170$</h3>
+
+    </div>
+    <div id="box23" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cec56272-1f43-4385-b3c0-43483a78e21a/WMNS+AIR+JORDAN+1+BROOKLYN.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 Brooklyn</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Women's Boot</h3>
+
+        <h3 class="text">MRP: 300$</h3>
+
+    </div>
+    <div id="box31" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ac71ec70-8175-4485-9b2e-94cab842d2d9/AIR+JORDAN+9+G+NRG+M24.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 9 G NGR</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Golf Shoes</h3>
+
+        <h3 class="text">MRP: 250$</h3>
+
+    </div>
+
+    <div id="box32" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6e10a5ef-aa42-497f-99ab-976c9a886758/AIR+JORDAN+1+RETRO+HIGH+OG.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 Retro High OG 'Black & Gold</h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Men's Shoes</h3>
+
+        <h3 class="text">MRP: 350$</h3>
+
+    </div>
+
+    <div id="box33" class="box">
+        <img class="photo"
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/eeded6de-4d2f-4de5-891e-df3ccc1b7176/WMNS+AIR+JORDAN+1+RETRO+HI+OG.png"
+            alt="">
+
+        <h3 class="text">Air Jordan 1 Retro High OG </h3>
+        <h3 style="opacity: 0.4; position: relative; top: -10px;" class="text">Women's Shoes</h3>
+
+        <h3 class="text">MRP: 400$</h3>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
